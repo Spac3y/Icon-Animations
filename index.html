@@ -2,26 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icon animation</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Icon animation</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="top">
-            <img src="images/home.svg" classs="home-icon">
-            <h1>Hello World</h1>
-        </div>
-            <div class="main">
-                <img src="images/facebook.svg" alt="facebook" class="facebook-icon">
-                <img src="images/instagram.svg" alt="instagram" class="instagram-icon">
-                <img src="images/tiktok.svg" alt="tiktok" class="tiktok-icon">
-                <img src="images/whatsapp.svg" alt="whastapp" class="whastapp-icon">
-            </div>
-            <div class="text-indicator"></div>
-        </div>
+	<div id="wrapper">
+		<div id="top">
+			<a href="https://vladify.com">
+				<img src="images/home.svg" id="home-icon">
+			</a>
+			<h1>Hello World</h1>
+		</div>
+		<div id="main">
+			<img src="images/facebook.svg" alt="facebook" id="facebook-icon" data-value="1">
+			<img src="images/instagram.svg" alt="instagram" id="instagram-icon" data-value="2">
+			<img src="images/tiktok.svg" alt="tiktok" id="tiktok-icon" data-value="3">
+			<img src="images/whatsapp.svg" alt="whastapp" id="whastapp-icon" data-value="4">
+		</div>
+		<div id="text-indicator"></div>
+	</div>
 </body>
 
 </html>
