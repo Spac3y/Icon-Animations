@@ -8,19 +8,19 @@ body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#top {
+.top {
 	align-items: center;
 	display: flex;
 	justify-content: center;
 }
 
-#top > img {
-	height: 100px;
-	width: 100px;
+.top > img {
+	height: 70px;
+	width: 70px;
 	display: inline-block;
 }
 
-#top > h1 {
+.top > h1 {
 	font-size: 50px;
 	display: inline-block;
 }
@@ -28,18 +28,12 @@ body {
 #main {
 	height: 100%;
 	width: 100%;
-
-	align-items: center;
-	justify-content: flex-end;
-	align-content: start;
-	display: inline-flex;
-	overflow: visible;
 	border: 1px solid black;
 }
 
 #main > img {
-	margin: auto;
-	transition: ease-out 0.3s;
+	margin: 10px;
+	transition: ease-out 0.25s;
 	height: 10%;
 	width: 10%;
 }
@@ -47,4 +41,12 @@ body {
 #main > img:hover {
 	height: 20%;
 	width: 20%;
+}
+
+#main:has(> img:hover) {
+	transition: ease-out 0.25s;
+
+	border-left-style: dotted;
+	border-right-style: dotted;
+	border-radius: 5px;
 }
