@@ -3,6 +3,8 @@ body {
 	margin-left: 30%;
 	margin-right: 30%;
 
+	transition: ease-in .3s;
+	
 	text-align: center;
 	background-color: #e2eee4;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,8 +28,9 @@ body {
 }
 
 #main {
-	height: 100%;
-	width: 100%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
 	border: 1px solid black;
 }
 
@@ -49,4 +52,15 @@ body {
 	border-left-style: dotted;
 	border-right-style: dotted;
 	border-radius: 5px;
+}
+
+@font-face {
+	font-family: "StarWars";
+	src: url(fonts/Trade\ Gothic\ LT\ Std\ Bold\ No.\ 2.otf);
+}
+
+#text-indicator {
+	font-size: 45px;
+	margin-top: 20px;
+	font-family: "StarWars";
 }
